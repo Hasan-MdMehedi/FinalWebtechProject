@@ -6,7 +6,8 @@
     <title>Equipment Rental Form</title>
 </head>
 <body>
-    <h2>Construction Equipment Rental Form</h2>
+    <fieldset>
+    <legend>Construction Equipment Rental Form</legend>
     <form action="action_page.php" method="post">
         <table border="1" cellpadding="10">
             <tr>
@@ -15,11 +16,11 @@
             </tr>
             <tr>
                 <td><label for="company_name">Company Name:</label></td>
-                <td><input type="text" id="company_name" name="company_name" required></td>
+                <td><input type="text" id="company_name" name="company_name" size="50" required></td>
             </tr>
             <tr>
                 <td><label for="equipment_name">Equipment Name:</label></td>
-                <td><input type="text" id="equipment_name" name="equipment_name" required></td>
+                <td><input type="text" id="equipment_name" name="equipment_name"  size="6"required></td>
             </tr>
             <tr>
                 <td><label for="equipment_type">Equipment Type:</label></td>
@@ -76,6 +77,7 @@
             </tr>
         </table>
     </form>
+</fieldset>
 </body>
 </html>
 
