@@ -30,7 +30,7 @@
     
     <fieldset>
         <legend>Equipment Rental Request Form</legend>
-        <form action="rental_request.php" method="post">
+        <form action="userside.php" method="post">
             <table border="1" cellpadding="10">
                 <tr>
                     <td><label for="full_name">Full Name:</label></td>
