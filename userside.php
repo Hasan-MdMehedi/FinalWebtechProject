@@ -6,9 +6,10 @@
     <title>User Equipment Rental Form</title>
 </head>
 <body>
+    <h2 align ="center"> Welcome to Construction Equipment Rental Management System </h2>
     <fieldset>
         <legend>User Login</legend>
-        <form action="user_login.php" method="post">
+        <form action="usersubmission.php" method="post">
             <table>
                 <tr>
                     <td><label for="username">Username:</label></td>
@@ -27,6 +28,7 @@
             </table>
         </form>
     </fieldset>
+     <hr>
     
     <fieldset>
         <legend>Equipment Rental Request Form</legend>
@@ -67,11 +69,12 @@
                 <tr>
                     <td><label for="payment_method">Payment Method:</label></td>
                     <td>
-                        <select id="payment_method" name="payment_method" required>
+                    <select id="payment_method" name="payment_method" required>
                             <option value="credit_card">Credit Card</option>
-                            <option value="paypal">PayPal</option>
-                            <option value="bank_transfer">Bank Transfer</option>
+                            <option value="Bkash">Bkash</option>
+                            <option value="bank_transfer" selected>Bank Transfer</option>
                             <option value="cash_on_delivery">Cash on Delivery</option>
+                            <option value="Nogod"> Nogod </option>
                         </select>
                     </td>
                 </tr>
