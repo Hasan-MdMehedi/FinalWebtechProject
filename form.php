@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>Equipment Rental Form</title>
@@ -7,7 +6,7 @@
     <fieldset>
     <legend>Construction Equipment Rental Form</legend>
     <form action="action_page.php" method="post">
-        <table border="1" cellpadding="10">
+        <table cellpadding="10">
             <tr>
                 <td><label for="provider_name">Provider Name:</label></td>
                 <td><input type="text" id="provider_name" name="provider_name" required></td>
@@ -68,7 +67,7 @@
                 <td><textarea id="additional_notes" name="additional_notes" rows="4" cols="30"></textarea></td>
             </tr>
             <tr>
-                <td colspan="2" align="center">
+                <td colspan="2">
                     <button type="submit">Submit</button>
                     <button type="reset">Reset</button>
                 </td>

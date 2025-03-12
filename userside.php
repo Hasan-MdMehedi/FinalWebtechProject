@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Equipment Rental Form</title>
 </head>
 <body>
-    <h2 align ="center"> Welcome to Construction Equipment Rental Management System </h2>
+    <h2 > Welcome to Construction Equipment Rental Management System </h2>
     <fieldset>
         <legend>User Login</legend>
         <form action="usersubmission.php" method="post">
@@ -20,7 +18,7 @@
                     <td><input type="password" id="password" name="password" required></td>
                 </tr>
                 <tr>
-                    <td colspan="2" align="center">
+                    <td colspan="2">
                         <button type="submit">Login</button>
                         <button type="reset">Reset</button>
                     </td>
@@ -33,7 +31,7 @@
     <fieldset>
         <legend>Equipment Rental Request Form</legend>
         <form action="userside.php" method="post">
-            <table border="1" cellpadding="10">
+            <table cellpadding="10">
                 <tr>
                     <td><label for="full_name">Full Name:</label></td>
                     <td><input type="text" id="full_name" name="full_name" required></td>
@@ -83,7 +81,7 @@
                     <td><textarea id="additional_notes" name="additional_notes" rows="4" cols="30"></textarea></td>
                 </tr>
                 <tr>
-                    <td colspan="2" align="center">
+                    <td colspan="2">
                         <button type="submit">Submit Rental Request</button>
                         <button type="reset">Reset</button>
                     </td>
