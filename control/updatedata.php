@@ -1,13 +1,14 @@
 <?php 
+   $stu_id = $_POST["sid"];
   $stu_name = $_POST["sname"];
    $stu_address = $_POST["saddress"];
-    $stu_class = $_POST["class"];
+    $stu_class = $_POST["sclass"];
      $stu_phone = $_POST["sphone"];
      $stu_email = $_POST["semail"];
      $stu_credit = $_POST["scredit"];
 
                 $conn = mysqli_connect("localhost","root","","crud") or die("conn failed");
-                 $sql = "INSERT INTO  student(sname,saddress,sclass,sphone,semail,scredit) VALUES ('{$stu_name}','{$stu_address}','{$stu_class}','{$stu_phone}','{$stu_email}','{$stu_credit}')";
+               $sql= "UPDATE student SET sname = '{$stu_name}', saddress = '{$stu_address}', sclass = '{$stu_class}',sphone= '{$stu_phone}',semail =  '{$stu_email}',scredit=  '{$stu_credit}'  WHERE sid = {$stu_id}";
                  $result = mysqli_query($conn,$sql) or die("resultfailed");
 
    header("location: http://localhost/phplabtask/control/index.php");

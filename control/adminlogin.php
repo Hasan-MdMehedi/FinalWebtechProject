@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 <html>
 <head>
     <title>Admin Page</title>
-    <link rel="stylesheet" href="../css/stylee.css">
+    <link rel="stylesheet" href="../view/stylee.css">
 </head>
 <body>
     <div class="container">
@@ -33,9 +33,9 @@ if (isset($_POST['submit'])) {
         <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
         <form method="post">
             <label>Username:</label>
-            <input type="text" name="username" required><br><br>
+            <input type="text" name="username"><br><br>
             <label>Password:</label>
-            <input type="password" name="password" required><br><br>
+            <input type="password" name="password"><br><br>
             <input type="submit" id="helloo" name="submit" value="Submit">
         </form>
     </div>

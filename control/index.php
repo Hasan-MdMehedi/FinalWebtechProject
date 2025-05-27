@@ -17,6 +17,9 @@ include 'header.php';
         <th>Address</th>
         <th>Class</th>
         <th>Phone</th>
+        <th>Email</th>
+        <th>Completed Credit</th>
+
         <th>Action</th>
         </thead>
         <tbody>
@@ -30,9 +33,11 @@ include 'header.php';
                 <td><?php echo $row["saddress"]?></td>
                 <td><?php  echo $row["cname"]?></td>
                 <td><?php  echo $row["sphone"]?></td>
+                <td><?php  echo $row["semail"]?></td>
+                <td><?php  echo $row["scredit"]?></td>
+                
                 <td>
-                    <a href='edit.php'>Edit</a>
-                    <a href='delete-inline.php'>Delete</a>
+                    <a href='edit.php?id=<?php echo $row["sid"]?>'>Edit</a>
                 </td>
             </tr>
             <?php } ?>
